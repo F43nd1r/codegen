@@ -2,9 +2,9 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.mysema.codegen</groupId>
+  <groupId>com.faendir.querydsl</groupId>
   <artifactId>codegen</artifactId>
-  <version>0.6.9.BUILD-SNAPSHOT</version>
+  <version>0.7.0</version>
   <name>Codegen</name>
   <description>Code generation and compilation for Java</description>
   
@@ -26,8 +26,8 @@
   </licenses>
   
   <scm>
-    <connection>scm:git:git@github.com:querydsl/codegen.git</connection>
-    <url>git@github.com:querydsl/codegen.git</url>
+    <connection>scm:git:git@github.com:f43nd1r/codegen.git</connection>
+    <url>git@github.com:f43nd1r/codegen.git</url>
   </scm>    
   
   <properties>
@@ -134,5 +134,13 @@
       <url>http://repository.springsource.com/maven/bundles/release</url>
     </pluginRepository>
   </pluginRepositories>
+
+  <distributionManagement>
+    <repository>
+      <id>bintray-f43nd1r-maven</id>
+      <name>f43nd1r-maven</name>
+      <url>https://api.bintray.com/maven/f43nd1r/maven/querydsl-codegen/;publish=1</url>
+    </repository>
+  </distributionManagement>
 
 </project>
